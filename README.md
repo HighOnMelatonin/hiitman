@@ -1,24 +1,26 @@
 # HiitMan
 - [HiitMan](#hiitman)
-  - [Components](#components)
-  - [Gameplay](#gameplay)
-  - [Dependencies](#dependencies)
-  - [Future Implementations](#future-implementations)
+  - [1. Components](#1-components)
+  - [2. Gameplay](#2-gameplay)
+  - [3. Dependencies](#3-dependencies)
+  - [4. Future Implementations](#4-future-implementations)
+  - [5. Known Issues and limitations](#5-known-issues-and-limitations)
 
 
-## Components
+## 1. Components
 1. Leaderboard
 2. Group exercising
 3. Integration with smart watches
 
-## Gameplay
+## 2. Gameplay
 - Higher intensity = more points
 - Initial proof of concept written for PC
 - 
 
-## Dependencies
+## 3. Dependencies
+- Unity
 
-
-## Future Implementations
+## 4. Future Implementations
 - Will expand to mobile gaming
-  
+
+## 5. Known Issues and limitations
