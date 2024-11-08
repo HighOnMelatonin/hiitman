@@ -34,4 +34,4 @@
 
 ## 5. Known Issues and limitations
 
-- Unsure of potential loophole(s) that results in users exploiting them.
+- Unsure of potential loophole(s) that results in users exploiting them
