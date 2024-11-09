@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://b7mfnbvotln6u"]
+[gd_scene load_steps=18 format=3 uid="uid://b7mfnbvotln6u"]
 
 [ext_resource type="Script" path="res://scenes/characters/flambo.gd" id="1_fy5wf"]
 [ext_resource type="Texture2D" uid="uid://do576r3a4sdoe" path="res://assets/characters/flambo/Owlet_Monster_Idle_4.png" id="1_m78bf"]
 [ext_resource type="Texture2D" uid="uid://canyds0eigjlx" path="res://assets/characters/flambo/Owlet_Monster_Run_6.png" id="2_lqjaf"]
+[ext_resource type="Texture2D" uid="uid://c2ooop1e4rijt" path="res://assets/characters/flambo/Owlet_Monster_Jump_8.png" id="3_qso00"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wj6df"]
 atlas = ExtResource("1_m78bf")
@@ -18,6 +19,10 @@ region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7qrqo"]
 atlas = ExtResource("1_m78bf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qst86"]
+atlas = ExtResource("3_qso00")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c6tqn"]
@@ -63,7 +68,10 @@ animations = [{
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qst86")
+}],
 "loop": true,
 "name": &"jump",
 "speed": 5.0
@@ -102,7 +110,8 @@ script = ExtResource("1_fy5wf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_2126c")
-animation = &"idle"
+animation = &"jump"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 3)

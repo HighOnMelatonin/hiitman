@@ -1,10 +1,14 @@
-[gd_scene load_steps=8 format=4 uid="uid://c4cprgjg1t8mm"]
+[gd_scene load_steps=12 format=4 uid="uid://c4cprgjg1t8mm"]
 
 [ext_resource type="Texture2D" uid="uid://bx2bh0jjqq1bk" path="res://assets/bg/1.png" id="1_p4cpw"]
 [ext_resource type="Texture2D" uid="uid://n3kal2k1ssic" path="res://assets/tiles/Tileset.png" id="2_et5x4"]
+[ext_resource type="Texture2D" uid="uid://bxg47igswokcq" path="res://assets/bg/4.png" id="2_sdj2m"]
+[ext_resource type="Texture2D" uid="uid://dvdr75t0gi0ww" path="res://assets/bg/5.png" id="3_ksuff"]
 [ext_resource type="PackedScene" uid="uid://b7mfnbvotln6u" path="res://scenes/characters/flambo.tscn" id="3_qggen"]
 [ext_resource type="PackedScene" uid="uid://blfm2llvdh8ww" path="res://scenes/characters/gum.tscn" id="4_8pce5"]
+[ext_resource type="Texture2D" uid="uid://dh3i4l4m3q0go" path="res://assets/bg/3.png" id="4_orswi"]
 [ext_resource type="PackedScene" uid="uid://86brel75bpfp" path="res://scenes/characters/blue_house.tscn" id="5_1ymi0"]
+[ext_resource type="Texture2D" uid="uid://dhtgs7nuw1adl" path="res://assets/bg/2.png" id="5_jlm8n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_luosw"]
 texture = ExtResource("2_et5x4")
@@ -463,7 +467,7 @@ sources/0 = SubResource("TileSetAtlasSource_luosw")
 
 [node name="Node" type="Node"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -471,6 +475,46 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_p4cpw")
+
+[node name="Clouds (Back)" type="TextureRect" parent="Background"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sdj2m")
+
+[node name="Clouds (Front)" type="TextureRect" parent="Background"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ksuff")
+
+[node name="Clouds (Small)" type="TextureRect" parent="Background"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_orswi")
+
+[node name="Moon" type="TextureRect" parent="Background"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_jlm8n")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -480,14 +524,18 @@ format = 2
 [node name="Layer1" type="TileMapLayer" parent="TileMap"]
 texture_filter = 1
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAAAAYAAAAGAAAAAAABAAYAAAAHAAAAAAACAAYAAAAIAAAAAAADAAYAAAAJAAAAAAAEAAYAAAAKAAAAAAAFAAYAAAALAAAAAAAGAAYAAAAGAAAAAAAHAAYAAAAHAAAAAAAIAAYAAAAIAAAAAAAJAAYAAAAJAAAAAAAKAAYAAAAKAAAAAAALAAYAAAALAAAAAAAAAAUAAAABAAAAAAABAAUAAAACAAAAAAACAAUAAAADAAAAAAADAAUAAAAEAAAAAAAEAAUAAAABAAAAAAAFAAUAAAACAAAAAAAGAAUAAAADAAAAAAAHAAUAAAAEAAAAAAAIAAUAAAABAAAAAAAJAAUAAAACAAAAAAAKAAUAAAADAAAAAAALAAUAAAAEAAAAAAA=")
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAA0AAAAGAAAAAAABAA0AAAAHAAAAAAACAA0AAAAIAAAAAAADAA0AAAAJAAAAAAAEAA0AAAAKAAAAAAAFAA0AAAALAAAAAAAGAA0AAAAGAAAAAAAHAA0AAAAHAAAAAAAIAA0AAAAIAAAAAAAJAA0AAAAJAAAAAAAKAA0AAAAKAAAAAAALAA0AAAALAAAAAAAMAA0AAAAGAAAAAAANAA0AAAAHAAAAAAAOAA0AAAAIAAAAAAAPAA0AAAAJAAAAAAAQAA0AAAAKAAAAAAARAA0AAAALAAAAAAASAA0AAAAGAAAAAAATAA0AAAAHAAAAAAAUAA0AAAAIAAAAAAAVAA0AAAAJAAAAAAAWAA0AAAAKAAAAAAAXAA0AAAALAAAAAAAAAAwAAAABAAAAAAABAAwAAAACAAAAAAACAAwAAAADAAAAAAADAAwAAAAEAAAAAAAEAAwAAAABAAAAAAAFAAwAAAACAAAAAAAGAAwAAAADAAAAAAAHAAwAAAAEAAAAAAAIAAwAAAABAAAAAAAJAAwAAAACAAAAAAAKAAwAAAADAAAAAAALAAwAAAAEAAAAAAAMAAwAAAABAAAAAAANAAwAAAACAAAAAAAOAAwAAAADAAAAAAAPAAwAAAAEAAAAAAAQAAwAAAABAAAAAAARAAwAAAACAAAAAAASAAwAAAADAAAAAAATAAwAAAAEAAAAAAAUAAwAAAABAAAAAAAVAAwAAAACAAAAAAAWAAwAAAADAAAAAAAXAAwAAAAEAAAAAAA=")
 tile_set = SubResource("TileSet_j60e0")
 
 [node name="flambo" parent="." instance=ExtResource("3_qggen")]
-position = Vector2(23, 56)
+position = Vector2(68, 512)
+scale = Vector2(3, 3)
 
 [node name="gum" parent="." instance=ExtResource("4_8pce5")]
-position = Vector2(91, 33)
+visible = false
+position = Vector2(200, 442)
 
 [node name="blue_house" parent="." instance=ExtResource("5_1ymi0")]
-position = Vector2(53, 51)
+visible = false
+position = Vector2(155, 440)
