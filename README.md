@@ -19,7 +19,7 @@
 - Higher intensity = Higher BPM = more points
 - More people = more points (points multiplier)
 - Initial proof of concept written for PC
-- Gacha system (i.e New Character, Free multiplier, Free exercise)
+- Gacha system (i.e New Character, Free Multiplier, Free Exercise)
 - Points to unlock more intense exercises
 - Daily log-ins = daily rewards + level up
 - Different character = different power
