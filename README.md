@@ -12,7 +12,7 @@
 1. Leaderboard (Refer to reddit's acheivements section)
 2. Group exercising
 3. Integration with smart watches (we can integrate with HPB's fitness tracker -> Healthy 365 points)
-4. Allow user to set fitness goal then game will generate a workout schedule???
+4. Allow user to set fitness goal 
 
 ## 2. Gameplay
 
@@ -22,7 +22,7 @@
 - Gacha system (i.e New Character, Free multiplier, Free exercise)
 - Points to unlock more intense exercises
 - Daily log-ins = daily rewards + level up
-- Higher level = better accessories
+- Different character = different power
 
 ## 3. Dependencies
 
