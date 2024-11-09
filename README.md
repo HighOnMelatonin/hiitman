@@ -30,7 +30,7 @@
 
 Resources used:
 1. [Character and tile designs](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art)
-2. [Unity tutorial]()
+2. [Unity tutorial](https://learn.unity.com/project/2d-platformer-template)
 3. [Sky background](https://itch.io/queue/c/302894/2d-backgrounds-for-games?game_id=1801829)
 
 
