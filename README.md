@@ -4,8 +4,9 @@
   - [1. Components](#1-components)
   - [2. Gameplay](#2-gameplay)
   - [3. Software and Acknowledgements](#3-software-and-acknowledgements)
-  - [4. Future Implementations](#4-future-implementations)
-  - [5. Known Issues and limitations](#5-known-issues-and-limitations)
+  - [4. Build instructions](#4-build-instructions)
+  - [5. Future Implementations](#5-future-implementations)
+  - [6. Known Issues and limitations](#6-known-issues-and-limitations)
 
 ## 1. Components
 
@@ -25,21 +26,17 @@
 
 ## 3. Software and Acknowledgements
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- Godot game engine
-=======
 - Godot
->>>>>>> Stashed changes
-=======
-- Godot
->>>>>>> Stashed changes
 
-## 4. Future Implementations
+## 4. Build instructions
+
+Concept game: [concept built with unity tutorial](#https://play.unity.com/en/games/e00f4018-fa3b-45a1-8cf9-02cecbefc6df/hiitman)
+
+## 5. Future Implementations
 
 - Will expand to mobile gaming
 - Allow user to set fitness goals
 
-## 5. Known Issues and limitations
+## 6. Known Issues and limitations
 
 - Unsure of potential loophole(s) that result in users exploiting them
