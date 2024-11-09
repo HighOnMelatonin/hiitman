@@ -26,7 +26,11 @@
 ## 3. Software and Acknowledgements
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Godot game engine
+=======
+- Godot
+>>>>>>> Stashed changes
 =======
 - Godot
 >>>>>>> Stashed changes
