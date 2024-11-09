@@ -28,6 +28,12 @@
 
 - Godot
 
+Resources used:
+1. [Character and tile designs](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art)
+2. [Unity tutorial]()
+3. [Sky background](https://itch.io/queue/c/302894/2d-backgrounds-for-games?game_id=1801829)
+
+
 ## 4. Build instructions
 
 Concept game: [concept built with unity tutorial](https://play.unity.com/en/games/e00f4018-fa3b-45a1-8cf9-02cecbefc6df/hiitman)
