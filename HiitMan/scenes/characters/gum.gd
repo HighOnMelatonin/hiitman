@@ -5,12 +5,17 @@ const SPEED = 400.0
 const JUMP_VELOCITY = -900.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+var orient_left = true
+
 func _physics_process(delta: float) -> void:
 	# Running + idle animations
 	if (velocity.x > 1 || velocity.x < -1):
 		animated_sprite_2d.animation = "run"
 	else:
 		animated_sprite_2d.animation = "idle"
+		if (orient_left):
+			animated_sprite_2d.flip_h = orient_left
+	
 	
 	# Add gravity.
 	if not is_on_floor():
