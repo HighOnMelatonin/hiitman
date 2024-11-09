@@ -3,7 +3,7 @@
 - [HiitMan](#hiitman)
   - [1. Components](#1-components)
   - [2. Gameplay](#2-gameplay)
-  - [3. Dependencies](#3-dependencies)
+  - [3. Software and Acknowledgements](#3-software-and-acknowledgements)
   - [4. Future Implementations](#4-future-implementations)
   - [5. Known Issues and limitations](#5-known-issues-and-limitations)
 
@@ -23,9 +23,13 @@
 - Daily log-ins = daily rewards + level up
 - Different character = different power
 
-## 3. Dependencies
+## 3. Software and Acknowledgements
 
+<<<<<<< Updated upstream
 - Godot game engine
+=======
+- Godot
+>>>>>>> Stashed changes
 
 ## 4. Future Implementations
 
